@@ -1,0 +1,22 @@
+.hero-wrap {
+    height : 760px;
+    background-image: url('../../images/group-2.png');
+    background-color: $french-blue;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-content {
+    margin-top : 120px;
+    .input-with-button {
+        margin-bottom : 60px
+    }
+}
+@media screen and (max-width : 576px){
+    .hero-wrap {
+        height : auto;
+    }
+    .hero-content {
+        margin-top : 35px;
+    }
+}

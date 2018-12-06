@@ -1,29 +1,33 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div>
+        <Loading :active="showLoader"
+                :is-full-page="true"
+                color="#f05638">
+        </Loading>
+        <SiteHeader></SiteHeader>
+        <router-view/>
     </div>
-    <router-view/>
-  </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
-</style>
+<script>
+import SiteHeader from '@/components/layout/SiteHeader.vue';
+import Loading from 'vue-loading-overlay';
+import 'vue-loading-overlay/dist/vue-loading.css';
+import { mapState, mapActions } from 'vuex';
+
+export default {
+    components: {
+        SiteHeader,
+        Loading,
+    },
+    created() {
+        this.loadEssentialAppData();
+    },
+    computed: {
+        ...mapState(['showLoader']),
+    },
+    methods: {
+        ...mapActions(['loadEssentialAppData']),
+    },
+};
+</script>

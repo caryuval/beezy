@@ -1,0 +1,57 @@
+[
+    {
+        "id": "1234567890",
+        "title": "Fire & blood",
+        "author": "George R.R. Martin",
+        "image": "https://s1.nyt.com/du/books/images/9781524796280.jpg",
+        "price": 20,
+        "genre": {
+            "id": 5,
+            "name": "Adventures"
+        }
+    },
+    {
+        "id": "2234567890",
+        "title": "Alex Cross",
+        "author": "James Patterson",
+        "image": "https://s1.nyt.com/du/books/images/9780316417501.jpg",
+        "price": 10,
+        "genre": {
+            "id": 6,
+            "name": "Action"
+        }
+    },
+    {
+        "id": "3234567890",
+        "title": "The Reckoning",
+        "author": "John Grisham",
+        "image": "https://s1.nyt.com/du/books/images/9780385544160.jpg",
+        "price": 15,
+        "genre": {
+            "id": 4,
+            "name": "Drama"
+        }
+    },
+    {
+        "id": "4234567890",
+        "title": "Dark sacred night",
+        "author": "Michael Connelly",
+        "image": "https://s1.nyt.com/du/books/images/9780316486675.jpg",
+        "price": 12,
+        "genre": {
+            "id": 2,
+            "name": "Horror"
+        }
+    },
+    {
+        "id": "5234567890",
+        "title": "Look alive twenty-five",
+        "author": "Janet Evanovich",
+        "image": "https://s1.nyt.com/du/books/images/9780399179235.jpg",
+        "price": 10,
+        "genre": {
+            "id": 1,
+            "name": "Romance"
+        }
+    }
+]
